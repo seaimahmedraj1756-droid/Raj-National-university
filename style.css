@@ -92,3 +92,21 @@ main {
   padding: 20px;
   position:calc();
 }
+@media screen and (max-width: 576px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: aqua;
+    }
+
+    .main > div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    pre {
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+    }
+}
