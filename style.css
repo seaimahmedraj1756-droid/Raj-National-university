@@ -48,7 +48,7 @@ main {
 
 
 /* Mobile Responsive */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
 
     .navbar {
         display: grid;
@@ -59,7 +59,7 @@ main {
     }
 
     .logo {
-               width: 100%;
+        width: 100%;
         max-width: 400px;
         max-height: 120px;
     }
@@ -93,12 +93,50 @@ main {
 .number{
   padding: 20px;
   position:calc();
-}
-/* @media screen and (max-width: 576px) {
+} */
+@media screen and (max-width: 576px) {
+
+    html, body {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: aqua;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px;
+        background-color: aqua;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 400px;
+        max-height: 120px;
+    }
+
+    .text {
+        grid-column: 3;
+        justify-self: end;
+        text-align: right;
+        color: blue;
+        font-size: 12px;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+    }
+
     .main {
         display: flex;
         flex-direction: column;
+        gap: 20px;
         width: 100%;
+        box-sizing: border-box;
         background-color: aqua;
     }
 
@@ -106,9 +144,13 @@ main {
         width: 100%;
         box-sizing: border-box;
     }
+}
 
-    pre {
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-    }
-} */
+.text1 {
+    font-size: 20px;
+}
+
+.number {
+    padding: 20px;
+    position: relative;
+}
