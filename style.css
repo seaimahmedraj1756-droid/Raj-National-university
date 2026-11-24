@@ -94,7 +94,7 @@ main {
   padding: 20px;
   position:calc();
 } */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
 
     html, body {
         width: 100%;
@@ -153,4 +153,89 @@ main {
 .number {
     padding: 20px;
     position: relative;
+} */
+ @media screen and (max-width: 576px) {
+
+    html, body {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: aqua;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px;
+        /* Navbar-এ কোনো background color নেই */
+        background: transparent;
+    }
+
+    .logo {
+        grid-column: 2;
+        justify-self: center;
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        max-height: 120px;
+        height: auto;
+    }
+
+    .text {
+        grid-column: 3;
+        justify-self: end;
+        text-align: right;
+        color: blue;
+        font-size: 12px;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+
+        /* লেখা বড় হলে পরের লাইনে যাবে */
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: normal;
+        max-width: 100%;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: aqua;
+    }
+
+    .main > div {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        /* লেখার জন্য */
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+}
+
+.text1 {
+    font-size: 20px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.number {
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
 }
